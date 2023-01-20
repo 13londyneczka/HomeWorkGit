@@ -1,3 +1,4 @@
 zmian1
 zmiana2
 zmiana3
+zmiana4
