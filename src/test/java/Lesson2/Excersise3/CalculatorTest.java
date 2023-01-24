@@ -6,26 +6,26 @@ import org.junit.jupiter.api.Test;
 class CalculatorTest {
 
     @Test
-    void shouldTwoValues1and1() {
+    void shouldAddTwoValues() {
         int sum = Calculator.sum(1,1);
         Assertions.assertEquals(2, sum);
     }
 
     @Test
-    void shouldDeductTwoValues5and3() {
+    void shouldDeductTwoValues() {
         int subtract = Calculator.subtract(5, 3);
         Assertions.assertEquals(2, subtract);
     }
 
     @Test
-    void shouldMultiplyTwoValues2and3() {
+    void shouldMultiplyTwoValues() {
         int multiply = Calculator.multiply(2, 3);
         Assertions.assertEquals(6, multiply);
     }
 
     @Test
-    void shouldDivisionTwoValues6and3() {
-        int division = Calculator.division(6, 3);
+    void shouldDivideTwoValues() {
+        int division = Calculator.divide(6, 3);
         Assertions.assertEquals(2, division);
     }
 }
