@@ -17,5 +17,6 @@ public class Manager extends BaseEmployee{
 
     @Override
     public int calculateMonthlySalary() {return this.getSalary() + bonus;}
+
     public void setBonus(int bonus){this.bonus = bonus;}
 }

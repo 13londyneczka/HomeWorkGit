@@ -21,9 +21,11 @@ public abstract class BaseEmployee {
         this.employmentYear = employmentYear;
         this.salary = BASE_SALARY;
     }
+
     public int getSalary(){
         return this.salary;
     }
+
     public abstract int calculateMonthlySalary();
 }
 
