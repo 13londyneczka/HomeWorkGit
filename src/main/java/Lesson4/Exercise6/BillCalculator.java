@@ -6,11 +6,13 @@ public class BillCalculator {
        return bill + serviceCharge;
 
    }
+
    public static double calculate(double bill, float paymentForService, double discount){
        return bill * (1 - discount) + paymentForService;
    }
+
    public static double calculate(double bill, float paymentForService, short takeOutCharge){
-       return bill * paymentForService + takeOutCharge;
+       return bill + paymentForService + takeOutCharge;
    }
 
 }
