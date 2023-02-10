@@ -8,7 +8,6 @@ public abstract class BaseEmployee {
     private final int thisYear = 2023;
     private final int salary;
 
-
     public BaseEmployee(String name, String surname, int employmentYear, int salary) {
 
         this.name = name;
@@ -23,7 +22,6 @@ public abstract class BaseEmployee {
         this.employmentYear = employmentYear;
         this.salary = BASE_SALARY;
     }
-
 
     public int getSalary(){
         return this.salary;
