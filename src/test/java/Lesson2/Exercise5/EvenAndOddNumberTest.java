@@ -10,11 +10,25 @@ class EvenAndOddNumberTest {
     @Test
     void shouldBeEven() {
         boolean isEvenNumber = EvenAndOddNumber.isEvenNumber(6);
-        Assertions.assertEquals(true, isEvenNumber);
+        Assertions.assertTrue(isEvenNumber);
     }
-        @Test
+
+    @Test
+    void shouldBeNotEven() {
+        boolean isNotEvenNumber = EvenAndOddNumber.isEvenNumber(5);
+        Assertions.assertFalse(isNotEvenNumber);
+
+    }
+
+    @Test
     void shouldBeOdd() {
         boolean isOddNumber = EvenAndOddNumber.isOddNumber(5);
-        Assertions.assertEquals(true, isOddNumber);
+        Assertions.assertTrue(isOddNumber);
+    }
+
+    @Test
+    void shouldBeNotOdd() {
+        boolean isNotOddNumber = EvenAndOddNumber.isOddNumber(6);
+        Assertions.assertFalse(isNotOddNumber);
     }
 }
