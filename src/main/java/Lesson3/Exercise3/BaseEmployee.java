@@ -6,11 +6,7 @@ public abstract class BaseEmployee {
     private final String surname;
     private final int employmentYear;
     private final int thisYear = 2023;
-
-    private int employeesYearsOfService;
-
     private final int salary;
-
 
 
     public BaseEmployee(String name, String surname, int employmentYear, int salary) {
@@ -28,13 +24,14 @@ public abstract class BaseEmployee {
         this.salary = BASE_SALARY;
     }
 
+
     public int getSalary(){
         return this.salary;
     }
 
     public abstract int calculateMonthlySalary();
 
-    public int getEmployeesYearsOfService(){return thisYear - employmentYear;}
+    public int calculateEmployeesYearsOfService(){return thisYear - employmentYear;}
 }
 
 
