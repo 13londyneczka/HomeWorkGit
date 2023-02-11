@@ -9,15 +9,21 @@ class TriangleTest {
 
     @Test
     void shouldCalculateTriangleArea() {
-        Triangle triangle = new Triangle(3,4,4,5);
+        //given
+        Triangle triangle = new Triangle(3, 4, 4, 5);
+        //when
         double getArea = triangle.getArea();
+        //then
         Assertions.assertEquals(6, getArea);
     }
 
     @Test
     void shouldCalculateTrianglePerimeter() {
-        Triangle triangle = new Triangle(6,8,8,10);
+        //given
+        Triangle triangle = new Triangle(6, 8, 8, 10);
+        //when
         double getPerimeter = triangle.getPerimeter();
+        //then
         Assertions.assertEquals(24, getPerimeter);
     }
 }

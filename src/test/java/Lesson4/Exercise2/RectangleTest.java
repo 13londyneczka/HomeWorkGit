@@ -9,15 +9,21 @@ class RectangleTest {
 
     @Test
     void shouldCalculateRectangleArea() {
-        Rectangle rectangle = new Rectangle(5,8);
+        //given
+        Rectangle rectangle = new Rectangle(5, 8);
+        //when
         double getArea = rectangle.getArea();
+        //then
         Assertions.assertEquals(40, getArea);
     }
 
     @Test
     void shouldCalculateRectanglePerimeter() {
-        Rectangle rectangle = new Rectangle(4,7);
+        //given
+        Rectangle rectangle = new Rectangle(4, 7);
+        //when
         double getPerimeter = rectangle.getPerimeter();
+        //then
         Assertions.assertEquals(22, getPerimeter);
     }
 }

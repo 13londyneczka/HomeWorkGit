@@ -2,9 +2,9 @@ package Lesson4.Exercise2;
 
 import static java.lang.Math.pow;
 
-    public class Circle extends Shape {
+public class Circle extends Shape {
 
-    private double radius;
+    final double radius;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -12,7 +12,7 @@ import static java.lang.Math.pow;
 
     @Override
     public double getArea() {
-        return Math.PI *pow(radius, 2);
+        return Math.PI * pow(radius, 2);
     }
 
     @Override

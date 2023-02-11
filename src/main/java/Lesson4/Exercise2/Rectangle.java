@@ -2,8 +2,8 @@ package Lesson4.Exercise2;
 
 public class Rectangle extends Shape {
 
-    private double sideALength;
-    private double sideBLength;
+    final double sideALength;
+    final double sideBLength;
 
     public Rectangle(double sideALength, double sideBLength) {
         this.sideALength = sideALength;

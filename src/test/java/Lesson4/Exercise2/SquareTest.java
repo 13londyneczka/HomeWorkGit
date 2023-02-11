@@ -9,15 +9,21 @@ class SquareTest {
 
     @Test
     void shouldCalculateSquareArea() {
+        //given
         Square square = new Square(5);
+        //when
         double getArea = square.getArea();
+        //then
         Assertions.assertEquals(25, getArea);
     }
 
     @Test
     void shouldCalculateSquarePerimeter() {
+        //given
         Square square = new Square(16);
+        //when
         double getPerimeter = square.getPerimeter();
+        //then
         Assertions.assertEquals(64, getPerimeter);
     }
 }
