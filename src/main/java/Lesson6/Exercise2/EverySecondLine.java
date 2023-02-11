@@ -16,7 +16,7 @@ public class EverySecondLine {
             String fileContent = Files.readString(Path.of(filePath));
             String[] lines = fileContent.split("\n");
             for (int i = 0; i < lines.length; i += 2) {
-                System.out.println(lines[1]);
+                System.out.println(lines[i]);
             }
         }catch(IOException e){
                 throw new RuntimeException(e);
