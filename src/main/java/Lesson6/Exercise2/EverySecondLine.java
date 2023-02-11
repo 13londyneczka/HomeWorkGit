@@ -7,7 +7,7 @@ import java.nio.file.Path;
 public class EverySecondLine {
 
     public static void main(String[] args) {
-        String filePath = "data.txt";
+        String filePath = "D:\\data.txt";
         printEverySecondLine(filePath);
     }
 
