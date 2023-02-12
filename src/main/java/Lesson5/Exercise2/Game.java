@@ -2,14 +2,18 @@ package Lesson5.Exercise2;
 
 public class Game {
 
-    public static void game (String[] args) {
+    public static boolean isDivisibleBy(int number, int divisor) {
+        return number % divisor == 0;
+    }
+
+    public static void game() {
 
         for (int i = 1; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 != 0) {
+            if (isDivisibleBy(i, 3)) {
                 System.out.println("Fizz");
-            } else if (i % 5 == 0 && i % 3 != 0) {
+            } else if (isDivisibleBy(i, 5)) {
                 System.out.println("Buzz");
-            } else if (i % 3 == 0 && i % 5 == 0) {
+            } else if (isDivisibleBy(i, 3) && isDivisibleBy(i, 5)) {
                 System.out.println("FizzBuzz");
             } else {
                 System.out.println(i);
