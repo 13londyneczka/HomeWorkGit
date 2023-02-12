@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class TextLength {
-    public static void main(String[] args) {
+public class TextUtils {
+    public static void displayTheNumbersOfCharacters(String pathToFile) {
         File file = new File("D:\\data.txt");
         try {
             String text = Files.readString(Paths.get("D:\\data.txt"));
