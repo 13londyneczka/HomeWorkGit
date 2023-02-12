@@ -7,13 +7,13 @@ import java.util.List;
 
 public class ReverseOrder {
 
-    public static void getReversOrder(String inputFile) {
+    public static void PrintReversOrder(String inputFile) {
         try {
             List<String> allLines = Files.readAllLines(Paths.get(inputFile));
             printReversePart(allLines);
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException exception) {
+            exception.printStackTrace();
         }
     }
 
