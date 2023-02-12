@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class FileReader extends FileWriter{
+public class FileReader {
 
-    public static void convertContentToUpperCase(String filePath) {
+    public static void convertContentToUpperCaseAndSavesToNewFile(String inputFilePath) {
         try {
-            String text = Files.readString(Path.of(filePath));
-            FileWriter.writeToFile("D:\\output.txt", text.toUpperCase());
+            String text = Files.readString(Path.of(inputFilePath));
+            FileWriter.writeToFile("outputFilePath", text.toUpperCase());
         } catch (IOException e) {
             e.printStackTrace();
         }
