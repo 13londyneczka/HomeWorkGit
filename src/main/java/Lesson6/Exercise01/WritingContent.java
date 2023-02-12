@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class Readme {
-    public static void main(String[] args) {
+public class WritingContent {
+
+    public static void displayContent(String pathToFile) {
         File file = new File("D:\\data.txt");
 
         try {
