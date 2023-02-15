@@ -12,9 +12,9 @@ class TriangleTest {
         //given
         Triangle triangle = new Triangle(3, 4, 4, 5);
         //when
-        double getArea = triangle.getArea();
+        double area = triangle.getArea();
         //then
-        Assertions.assertEquals(6, getArea);
+        Assertions.assertEquals(6, area);
     }
 
     @Test
@@ -22,8 +22,8 @@ class TriangleTest {
         //given
         Triangle triangle = new Triangle(6, 8, 8, 10);
         //when
-        double getPerimeter = triangle.getPerimeter();
+        double perimeter = triangle.getPerimeter();
         //then
-        Assertions.assertEquals(24, getPerimeter);
+        Assertions.assertEquals(24, perimeter);
     }
 }

@@ -12,9 +12,9 @@ class SquareTest {
         //given
         Square square = new Square(5);
         //when
-        double getArea = square.getArea();
+        double area = square.getArea();
         //then
-        Assertions.assertEquals(25, getArea);
+        Assertions.assertEquals(25, area);
     }
 
     @Test
@@ -22,8 +22,8 @@ class SquareTest {
         //given
         Square square = new Square(16);
         //when
-        double getPerimeter = square.getPerimeter();
+        double perimeter = square.getPerimeter();
         //then
-        Assertions.assertEquals(64, getPerimeter);
+        Assertions.assertEquals(64, perimeter);
     }
 }

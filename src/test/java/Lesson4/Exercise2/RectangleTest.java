@@ -12,9 +12,9 @@ class RectangleTest {
         //given
         Rectangle rectangle = new Rectangle(5, 8);
         //when
-        double getArea = rectangle.getArea();
+        double area = rectangle.getArea();
         //then
-        Assertions.assertEquals(40, getArea);
+        Assertions.assertEquals(40, area);
     }
 
     @Test
@@ -22,8 +22,8 @@ class RectangleTest {
         //given
         Rectangle rectangle = new Rectangle(4, 7);
         //when
-        double getPerimeter = rectangle.getPerimeter();
+        double perimeter = rectangle.getPerimeter();
         //then
-        Assertions.assertEquals(22, getPerimeter);
+        Assertions.assertEquals(22, perimeter);
     }
 }
