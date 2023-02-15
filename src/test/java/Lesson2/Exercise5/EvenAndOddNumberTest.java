@@ -3,32 +3,38 @@ package Lesson2.Exercise5;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class EvenAndOddNumberTest {
 
     @Test
     void shouldBeEven() {
-        boolean isEvenNumber = EvenAndOddNumber.isEvenNumber(6);
+        //when
+        boolean isEvenNumber = ParityUtils.isEven(6);
+        //then
         Assertions.assertTrue(isEvenNumber);
     }
 
     @Test
     void shouldBeNotEven() {
-        boolean isNotEvenNumber = EvenAndOddNumber.isEvenNumber(5);
+        //when
+        boolean isNotEvenNumber = ParityUtils.isEven(5);
+        //then
         Assertions.assertFalse(isNotEvenNumber);
 
     }
 
     @Test
     void shouldBeOdd() {
-        boolean isOddNumber = EvenAndOddNumber.isOddNumber(5);
+        //when
+        boolean isOddNumber = ParityUtils.isOdd(5);
+        //then
         Assertions.assertTrue(isOddNumber);
     }
 
     @Test
     void shouldBeNotOdd() {
-        boolean isNotOddNumber = EvenAndOddNumber.isOddNumber(6);
+        //when
+        boolean isNotOddNumber = ParityUtils.isOdd(6);
+        //then
         Assertions.assertFalse(isNotOddNumber);
     }
 }
