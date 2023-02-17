@@ -6,10 +6,10 @@ import java.nio.file.Path;
 
 public class FileReader {
 
-    public static void convertContentToUpperCaseAndSavesToNewFile(String inputFilePath) {
+    public static void convertContentToUpperCase(String inputFilePath, String outputFilePath) {
         try {
             String text = Files.readString(Path.of(inputFilePath));
-            FileWriter.writeToFile("outputFilePath", text.toUpperCase());
+            FileWriter.writeToFile(outputFilePath, text.toUpperCase());
         } catch (IOException e) {
             e.printStackTrace();
         }
