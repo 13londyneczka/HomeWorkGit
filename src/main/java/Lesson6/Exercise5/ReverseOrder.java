@@ -9,13 +9,12 @@ import java.util.List;
 public class ReverseOrder {
 
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\Marysia\\Desktop\\GitRepozytoria\\HomeWorkGit\\src\\main\\resources\\TextFile";
-        PrintReversOrder("C:\\Users\\Marysia\\Desktop\\GitRepozytoria\\HomeWorkGit\\src\\main\\resources\\TextFile");
+        printReversOrder("C:\\Users\\Marysia\\Desktop\\GitRepozytoria\\HomeWorkGit\\src\\main\\resources\\TextFile");
     }
 
-        public static void PrintReversOrder(String inputFile) {
+        public static void printReversOrder(String pathName) {
             try {
-                List<String> allLines = Files.readAllLines(Paths.get("C:\\Users\\Marysia\\Desktop\\GitRepozytoria\\HomeWorkGit\\src\\main\\resources\\TextFile"));
+                List<String> allLines = Files.readAllLines(Paths.get(pathName));
                 printReversePart(allLines);
 
             } catch (IOException exception) {
@@ -24,7 +23,7 @@ public class ReverseOrder {
         }
 
         private static void printReversePart(List<String> allLines) {
-            for (int i = allLines.size() -1; i > -1; i--) {
+            for (int i = allLines.size() -1; i >= 0; i--) {
                 System.out.println(allLines.get(i));
             }
         }
