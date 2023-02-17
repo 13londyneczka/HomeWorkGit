@@ -6,10 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class TextUtils {
-  public static void displayTheNumbersOfCharacters(String pathname){
-    File file = new File("D:\\data.txt");
+  public static void displayTheNumbersOfCharacters(String pathname) {
+    File file = new File(pathname);
     try {
-      Files.readString(Paths.get("D:\\data.txt"));
+      Files.readString(Paths.get(pathname));
       System.out.println(file.length());
     } catch (IOException exception) {
       exception.printStackTrace();
