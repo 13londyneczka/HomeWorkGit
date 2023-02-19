@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class WritingContent {
+public class ReadingContent {
 
   public static void displayContent(String pathName) {
     try {
