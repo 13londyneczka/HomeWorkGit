@@ -14,17 +14,12 @@ public class ReverseOrder {
 
   public static void printReversOrder(String pathName) {
     try {
-      List<String> allLines = Files.readAllLines(Paths.get(pathName));
-      printReversePart(allLines);
-
+      String text = Files.readString(Paths.get(pathName));
+      StringBuilder stringBuilder = new StringBuilder(text);
+      String result = stringBuilder.reverse().toString();
+      System.out.println(result);
     } catch (IOException exception) {
       exception.printStackTrace();
-    }
-  }
-
-  private static void printReversePart(List<String> allLines) {
-    for (int i = allLines.size() - 1; i >= 0; i--) {
-      System.out.println(allLines.get(i));
     }
   }
 }
