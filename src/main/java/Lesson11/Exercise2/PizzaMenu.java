@@ -1,5 +1,6 @@
 package Lesson11.Exercise2;
 
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -51,8 +52,14 @@ public class PizzaMenu {
         .max()
         .orElse(null);
     System.out.println("Pizza o najwyższej kaloryczności:" + pizzaMax.getName());
+
+    Pizza pizzaMin = menu.stream()
+        .min()
+        .orElse(null);
+    System.out.println("Pizza o najniższej kaloryczności:" + pizzaMin.getName());
   }
 }
+
 
 
 
