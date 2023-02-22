@@ -2,10 +2,10 @@ package Lesson4.Exercise2;
 
 public class Triangle extends Shape {
 
-    final double baseLength;
-    final double height;
-    final double sideALength;
-    final double sideBLength;
+    private final double baseLength;
+    private final double height;
+    private final double sideALength;
+    private final double sideBLength;
 
     public Triangle(double baseLength, double height, double sideALength, double sideBLength) {
         this.baseLength = baseLength;

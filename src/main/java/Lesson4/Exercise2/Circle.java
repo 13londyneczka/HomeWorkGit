@@ -4,7 +4,7 @@ import static java.lang.Math.pow;
 
 public class Circle extends Shape {
 
-    final double radius;
+    private final double radius;
 
     public Circle(double radius) {
         this.radius = radius;
