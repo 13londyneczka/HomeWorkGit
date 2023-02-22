@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ConversionTest {
 
-    @Test
-    void shouldBeConvertingMinutesToSeconds() {
-        //when
-        int convertingMinutesToSeconds = Conversion.convertingMinutesToSeconds(2);
-        //then
-        Assertions.assertEquals(120, convertingMinutesToSeconds);
-    }
+  @Test
+  void shouldConvertMinutesToSeconds() {
+    //when
+    int convertingMinutesToSeconds = Conversion.convertToSeconds(2);
+    //then
+    Assertions.assertEquals(120, convertingMinutesToSeconds);
+  }
 }
