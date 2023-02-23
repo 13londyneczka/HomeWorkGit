@@ -14,9 +14,9 @@ class UpperCaseFormatterTest {
 
     //when
     UpperCaseFormatter upperCaseFormatter = new UpperCaseFormatter();
-    String formattedText = upperCaseFormatter.formattedText(text);
+    String formatText = upperCaseFormatter.formatText(text);
 
     //then
-    Assertions.assertEquals("ALA MA KOTA", formattedText);
+    Assertions.assertEquals("ALA MA KOTA", formatText);
   }
 }

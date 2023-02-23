@@ -14,9 +14,9 @@ class LowerCaseFormatterTest {
 
     //when
     LowerCaseFormatter lowerCaseFormatter = new LowerCaseFormatter();
-    String formattedText = lowerCaseFormatter.formattedText(text);
+    String formatText = lowerCaseFormatter.formatText(text);
 
     //then
-    Assertions.assertEquals("ala ma kota", formattedText);
+    Assertions.assertEquals("ala ma kota", formatText);
   }
 }
