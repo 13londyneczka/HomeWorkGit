@@ -15,7 +15,7 @@ class RectangleTest {
   }
 
   @Test
-  void shouldCalculateTheAreaRectangle() {
+  void shouldCalculateThePerimeterTheRectangle() {
     Rectangle rectangle = new Rectangle(10, 5);
     double getPerimeter = rectangle.getPerimeter();
     Assertions.assertEquals(30, getPerimeter);
