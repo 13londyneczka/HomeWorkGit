@@ -17,10 +17,13 @@ public class BirthDate {
     } else return age -1;
   }
 
-  public static int getWeekOfYear(LocalDate dateOfBirth) {
-    int week = dateOfBirth.get(ChronoField.ALIGNED_WEEK_OF_YEAR);
-    return week;
+  public static int getDayOfYear(LocalDate dateOfBirth) {
+    int whichDay = dateOfBirth.get(ChronoField.DAY_OF_YEAR);
+    return whichDay;
   }
 
-  public static String getDayOfBirth()
+  public static String getDayOfBirth(LocalDate dateOfBirth) {
+    String day = String.valueOf(dateOfBirth.getDayOfWeek());
+    return day;
+  }
 }
