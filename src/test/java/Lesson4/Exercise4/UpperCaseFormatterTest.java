@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class UpperCaseFormatterTest {
 
   @Test
-  void shouldUpperCaseLetters() {
+  void shouldFormatToUpperCaseLetters() {
     //given
     String text = "Ala ma Kota";
 

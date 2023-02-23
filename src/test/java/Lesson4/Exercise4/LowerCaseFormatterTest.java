@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class LowerCaseFormatterTest {
 
   @Test
-  void shouldLowerCaseLetters() {
+  void shouldFormatToLowerCaseLetters() {
     //given
     String text = "ALA ma kotA";
 
