@@ -18,7 +18,7 @@ public class NumberPicker {
     return getNumbers(numbers, "^(?:-?\\d*)\\.?\\d+[eE][-\\+]?\\d+$");
   }
 
-  public List<String> getNumbers(List<String> numbers, String regex) {
+  private List<String> getNumbers(List<String> numbers, String regex) {
     Pattern pattern = Pattern.compile(regex);
 
     List<String> results = new ArrayList<>();
