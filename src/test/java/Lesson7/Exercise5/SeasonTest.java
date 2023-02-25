@@ -3,10 +3,9 @@ package Lesson7.Exercise5;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Month;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
-import org.junit.jupiter.params.provider.ValueSource;
+
 
 class SeasonTest {
 
@@ -16,37 +15,22 @@ class SeasonTest {
     assertEquals(Season.WINTER, Season.of(month));
   }
 
-//  void shouldGetSeasonWinter() {
-//    Assertions.assertTrue(Month.DECEMBER, Month.JANUARY, Month.FEBRUARY(Season.WINTER));
+  @ParameterizedTest
+  @EnumSource(value = Month.class, names = {"MARCH", "APRIL", "MAY"})
+  void shouldGetSeasonSpring(Month month) {
+    assertEquals(Season.SPRING, Season.of(month));
+  }
 
-//  }
+  @ParameterizedTest
+  @EnumSource(value = Month.class, names = {"JUNE", "JULY", "AUGUST"})
+  void shouldGetSeasonSummer(Month month) {
+    assertEquals(Season.SUMMER, Season.of(month));
+  }
 
-//
-//  @Test
-//  void shouldGetSeasonSpring() {
-//    assertEquals(Season.SPRING, SeasonUtils.getSeason(Month.MARCH));
-//    assertEquals(Season.SPRING, SeasonUtils.getSeason(Month.APRIL));
-//    assertEquals(Season.SPRING, SeasonUtils.getSeason(Month.MAY));
-//  }
-//
-//  @Test
-//  void shouldGetSeasonSummer() {
-//    assertEquals(Season.SUMMER, SeasonUtils.getSeason(Month.JUNE));
-//    assertEquals(Season.SUMMER, SeasonUtils.getSeason(Month.JULY));
-//    assertEquals(Season.SUMMER, SeasonUtils.getSeason(Month.AUGUST));
-//  }
-//
-//  @Test
-//  void shouldGetSeasonAutumn() {
-//    assertEquals(Season.AUTUMN, SeasonUtils.getSeason(Month.SEPTEMBER));
-//    assertEquals(Season.AUTUMN, SeasonUtils.getSeason(Month.OCTOBER));
-//    assertEquals(Season.AUTUMN, SeasonUtils.getSeason(Month.NOVEMBER));
-//  }
-//
-//  @Test
-//  void shouldGetSeasonNullInput() {
-//    assertThrows(IllegalArgumentException.class, () -> {
-//      SeasonUtils.getSeason(null);
-//    });
-//  }
+  @ParameterizedTest
+  @EnumSource(value = Month.class, names = {"SEPTEMBER", "OCTOBER", "NOVEMBER"})
+  void shouldGetSeasonAutumn(Month month) {
+    assertEquals(Season.AUTUMN, Season.of(month));
+  }
+
 }
