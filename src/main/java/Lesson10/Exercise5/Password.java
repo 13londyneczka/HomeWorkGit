@@ -6,9 +6,8 @@ import java.util.regex.Pattern;
 public class Password {
 
     public static boolean isPasswordGood(String password) {
-        Pattern pattern= Pattern.compile("^(?=.*\\d)(?=>*[A-Z])(?!>*?(?:23))>{7,}&");
+        Pattern pattern = Pattern.compile("^(?=.*[0-9])(?=.*[A-Z])(?!.*?(?:23)).{7,}$");
         Matcher matcher = pattern.matcher(password);
-        boolean matches = matcher.matches();
-        return matches;
+        return matcher.matches();
     }
 }
