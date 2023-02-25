@@ -2,9 +2,9 @@ package Lesson3.Exercise1;
 
 public class PlaceInCinema {
 
-   private final int number;
-   private final int row;
-   private boolean isFree;
+    private final int number;
+    private final int row;
+    private boolean isFree;
 
     public PlaceInCinema(int number, int row, boolean isFree) {
         this.number = number;
